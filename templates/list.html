@@ -37,6 +37,11 @@
     tbody tr:hover {
       background-color: #f1f1f1;
     }
+    img {
+      max-width: 100px;
+      max-height: 100px;
+      object-fit: cover;
+    }
   </style>
 </head>
 <body>
@@ -44,6 +49,7 @@
   <table>
     <thead>
       <tr>
+        <th>Image</th>
         <th>Name</th>
         <th>Description</th>
         <th>Quantity</th>
@@ -53,6 +59,9 @@
     <tbody>
       {% for item in item %}
       <tr>
+        <td>
+          <img src="{{ item.images }}" alt="{{ item.name }}">
+        </td>
         <td>{{ item.name }}</td>
         <td>{{ item.description }}</td>
         <td>{{ item.quantity }}</td>
