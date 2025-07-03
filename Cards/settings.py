@@ -81,7 +81,8 @@ DATABASES = {
     }
 }
 
-
+IMAGES_URL = '../images'
+IMAGES_ROOT = BASE_DIR / 'images'
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
 
